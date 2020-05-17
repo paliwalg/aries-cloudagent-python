@@ -182,7 +182,7 @@ async def main(
             ) = await agent.register_schema_and_creddef(
                 "degree schema",
                 version,
-                ["name", "date", "degree", "age", "timestamp"],
+                ["name", "date", "degree", "age", "timestamp", "Full Name"],
                 support_revocation=revocation,
             )
 
@@ -257,6 +257,7 @@ async def main(
                     "degree": "Maths",
                     "age": "24",
                     "timestamp": str(int(time.time())),
+                    "Full Name" : "Gourav Paliwal",
                 }
 
                 cred_preview = {

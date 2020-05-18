@@ -211,4 +211,4 @@ $DOCKER run --name $AGENT --rm -it ${DOCKER_OPTS} \
   -p 0.0.0.0:$AGENT_PORT_RANGE:$AGENT_PORT_RANGE \
   -v "/$(pwd)/../logs:/home/indy/logs" \
   $DOCKER_ENV \
-   bcgovimages/aries-cloudagent:py36-1.14-1_0.5.1 $AGENT_MODULE --port $AGENT_PORT $ARGS
+    faber-alice-demo $AGENT_MODULE --port $AGENT_PORT $ARGS
